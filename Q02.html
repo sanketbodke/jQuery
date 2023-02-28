@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script src="./jQuery.js"></script>
+    </script>
+</head>
+
+<body>
+    <a id="scrlBotm" href="#">Scroll to Bottom</a>
+    <div style="height:1000px"></div>
+    <a id="scrlTop" href="#">Scroll to Top</a>
+
+    <script type="text/javascript" language="javascript">
+        $(document).ready(function() {
+            $('#scrlBotm').click(function() {
+                $('html, body').animate({
+                        scrollTop: $(document).height()
+                    },
+                    1000);
+            });
+
+            $('#scrlTop').click(function() {
+                $('html, body').animate({
+                        scrollTop: '0px'
+                    },
+                    1000);
+            });
+        });
+    </script>
+</body>
+
+</html>
