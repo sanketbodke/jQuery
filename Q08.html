@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js"></script>
+</head>
+
+<body>
+    <div>
+        <a class="printPage" href="#">Print</a>
+    </div>
+    <script>
+        $('a.printPage').click(function() {
+            window.print();
+            return false;
+        });
+    </script>
+</body>
+
+</html>

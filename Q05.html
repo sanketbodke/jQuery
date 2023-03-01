@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Basic inline styling -->
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        h1 {
+            color: green;
+            font-size: 2.5rem;
+        }
+        
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Broken image -->
+    <img src="https://media.geeksforgeeks.org/content/1.png" />
+
+    <img src="https://media.geeksforgeeks.org/wp-content/
+	uploads/20210915115837/gfg3-300x300.png" alt="GeeksForGeeks Logo White" />
+
+    <script type="text/javascript">
+        $("img").bind("error", function(e) {
+            var $this = $(this);
+            $(this).attr("src", "https://media.geeksforgeeks.org/wp-content/" +
+                "uploads/20220208183723/responsive1-295x300.png");
+        });
+    </script>
+</body>
+
+</html>

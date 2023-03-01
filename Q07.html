@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="jQuery.js">
+    </script>
+
+    <style type="text/css">
+        tr.zebrastripe {
+            background-color: green;
+        }
+        
+        td {
+            border: 0.5px outset silver;
+            border-collapse: collapse;
+            padding: 5px 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Course</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Fork CPP</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>DSA</td>
+            <td>2499</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Fork Java</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Linux</td>
+            <td>599</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Fork Python</td>
+            <td>Free</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+        $(function() {
+            $("table tr:nth-child(odd)")
+                .addClass("zebrastripe");
+        });
+    </script>
+</body>
+
+</html>

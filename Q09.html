@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js"></script>
+</head>
+
+<body>
+    <form>
+        <textarea id="textarea" maxlength="15"></textarea>
+        <span id="rchars">15</span> Character(s) Remaining
+    </form>
+    <script>
+        var maxLength = 15;
+        $('textarea').keyup(function() {
+            var textlen = maxLength - $(this).val().length;
+            $('#rchars').text(textlen);
+        });
+    </script>
+</body>
+
+</html>
