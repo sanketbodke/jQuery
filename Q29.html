@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js"></script>
+</head>
+
+<body>
+    <a href="https://www.w3resource.com/jquery-exercises/">jQuery Exercises, Practice, Solution</a>
+    <p></p>
+    <input id="button1" type="button" value="Click to remove the link!" /> s
+    <script>
+        $(document).ready(function() {
+            $('#button1').click(function() {
+                $("a").removeAttr('href');
+            });
+        });
+    </script>
+</body>
+
+</html>

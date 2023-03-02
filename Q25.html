@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js">
+    </script>
+</head>
+
+<body>
+    <input type="button" id="Geeks" value="Click">
+    <script>
+        $(document).ready(function() {
+            $("input").click(function() {
+                $("#Geeks").prop("value", "Clicked");
+            });
+        });
+    </script>
+</body>
+
+</html>

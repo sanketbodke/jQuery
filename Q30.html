@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js"></script>
+</head>
+
+<body>
+    <p>Input the Amount:
+        <input type="text" class="numbers" value="" /></p>
+    <script>
+        $('.numbers').keyup(function() {
+            this.value = this.value.replace(/[^0-9\.]/g, '');
+        });
+    </script>
+</body>
+
+</html>

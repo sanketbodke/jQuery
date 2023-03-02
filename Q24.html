@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js"></script>
+</head>
+
+<body>
+    <script>
+        var y = ['Red', 'Green', 'White', 'black', 'Yellow'];
+        var remove_Item = 'White';
+
+        document.write('Array before removing the element = ' + y);
+        y = $.grep(y, function(value) {
+            return value != remove_Item;
+        });
+        document.write('</br> Array after removing the element = ' + y);
+    </script>
+</body>
+
+</html>
