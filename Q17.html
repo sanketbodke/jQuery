@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js"></script>
+    <style>
+        p.center {
+            text-align: center;
+            color: blue;
+        }
+        
+        p.large {
+            font-size: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="item" class="center large">This paragraph refers two classes.</p>
+
+    <input type="button" value="Click to remove all classes" onclick="remove_classes()" />
+    <script>
+        function remove_classes() {
+            $("#item").removeClass();
+        }
+    </script>
+</body>
+
+</html>
