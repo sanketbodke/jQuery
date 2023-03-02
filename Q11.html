@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jQuery.js">
+    </script>
+
+    <style>
+        .divClass {
+            height: 40px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+    </div>
+
+    <input type="button" value="Add <div>" onclick="addText()" />
+    <script>
+        function addText() {
+            $(document).ready(function() {
+
+                var object = {
+                    id: "divID",
+                    class: "divClass",
+                    css: {
+                        "background": "Red"
+                    }
+                };
+                var addition = $("<div>", object);
+                $("#parent").append(addition);
+            });
+        }
+    </script>
+</body>
+
+</html>
